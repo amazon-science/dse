@@ -1,0 +1,7 @@
+transformers==4.8.1
+sentence-transformers==2.0.0
+numpy
+sklearn
+tensorboardX==2.3 
+pytorch-nlp==0.5.0
+datasets
