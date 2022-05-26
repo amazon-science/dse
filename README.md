@@ -1,11 +1,9 @@
 # DSE: Learning Dialogue Representations from Consecutive Utterances
 
 
-This is the official code base of:
+This repository contains the code for our paper
 
-"Learning Dialogue Representations from Consecutive Utterances", NAACL 2022.
-
-This repository contains three parts of codes: data processing, pre-train and evaluation. Please refer to each folder for the codes.
+[Learning Dialogue Representations from Consecutive Utterances" (NAACL 2022)](https://www.amazon.science/publications/learning-dialogue-representations-from-consecutive-utterances).
 
 
 
@@ -451,7 +449,7 @@ cd evaluate
 
 ## 7. Citation
 
-If you have any question regarding our paper or codes, please feel free to start a issue or email Zhihan Zhou (zhihanzhou2020@u.northwestern.edu).
+If you have any question regarding our paper or codes, please feel free to start a issue or email Zhihan Zhou (zhihanzhou2020@u.northwestern.edu, dejiaoz@amazon.com).
 
 
 
