@@ -449,7 +449,7 @@ cd evaluate
 
 ## 7. Citation
 
-If you have any question regarding our paper or codes, please feel free to start a issue or email Zhihan Zhou (zhihanzhou2020@u.northwestern.edu, dejiaoz@amazon.com).
+If you have any question regarding our paper or codes, please feel free to start a issue or email Zhihan Zhou or Dejiao Zhang (zhihanzhou2020@u.northwestern.edu, dejiaoz@amazon.com).
 
 
 
