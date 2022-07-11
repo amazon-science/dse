@@ -91,7 +91,6 @@ embeddings = get_average_embedding(texts)
 print("Similarity of the two sentences is: ", cosine_sim(embeddings[0], embeddings[1]).item())
 ```
 
-The f five models pretrained with DSE
 
 ## Model List
 
