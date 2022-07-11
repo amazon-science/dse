@@ -89,8 +89,21 @@ cosine_sim = nn.CosineSimilarity(dim=1)
 embeddings = get_average_embedding(texts)
 
 print("Similarity of the two sentences is: ", cosine_sim(embeddings[0], embeddings[1]).item())
-
 ```
+
+The f five models pretrained with DSE
+
+## Model List
+
+We released the following five models. You can import these models by using [HuggingFace's Transformers](https://github.com/huggingface/transformers). 
+
+| Model                                                                                                            | 
+|:-----------------------------------------------------------------------------------------------------------------|
+| [aws-ai/dse-distilbert-base](https://huggingface.co/aws-ai/dse-distilbert-base)                                  |   
+| [aws-ai/dse-bert-base](https://huggingface.co/aws-ai/dse-bert-base)                                              |
+| [aws-ai/dse-bert-large](https://huggingface.co/aws-ai/dse-bert-large)                                            |
+| [aws-ai/dse-roberta-base](https://huggingface.co/aws-ai/dse-roberta-base)                                        |  
+| [aws-ai/dse-roberta-large](https://huggingface.co/aws-ai/dse-roberta-large)                                            |   
 
 
 
@@ -449,14 +462,31 @@ cd evaluate
 
 ## 7. Citation
 
-If you have any question regarding our paper or codes, please feel free to start a issue or email Zhihan Zhou or Dejiao Zhang (zhihanzhou2020@u.northwestern.edu, dejiaoz@amazon.com).
+If you have any question regarding our paper or codes, please feel free to start an issue or email Zhihan Zhou or Dejiao Zhang (zhihanzhou2020@u.northwestern.edu, dejiaoz@amazon.com).
 
 
 
-If you use DSE, please cite our paper:
+If you use DSE in your work, please cite our paper:
 
 ```
-
+@inproceedings{zhou-etal-2022-learning,
+    title = "Learning Dialogue Representations from Consecutive Utterances",
+    author = "Zhou, Zhihan  and
+      Zhang, Dejiao  and
+      Xiao, Wei  and
+      Dingwall, Nicholas  and
+      Ma, Xiaofei  and
+      Arnold, Andrew  and
+      Xiang, Bing",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.55",
+    pages = "754--768",
+    abstract = "Learning high-quality dialogue representations is essential for solving a variety of dialogue-oriented tasks, especially considering that dialogue systems often suffer from data scarcity. In this paper, we introduce Dialogue Sentence Embedding (DSE), a self-supervised contrastive learning method that learns effective dialogue representations suitable for a wide range of dialogue tasks. DSE learns from dialogues by taking consecutive utterances of the same dialogue as positive pairs for contrastive learning. Despite its simplicity, DSE achieves significantly better representation capability than other dialogue representation and universal sentence representation models. We evaluate DSE on five downstream dialogue tasks that examine dialogue representation at different semantic granularities. Experiments in few-shot and zero-shot settings show that DSE outperforms baselines by a large margin, for example, it achieves 13{\%} average performance improvement over the strongest unsupervised baseline in 1-shot intent classification on 6 datasets. We also provide analyses on the benefits and limitations of our model.",
+}
 ```
 
 
