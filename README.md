@@ -63,6 +63,7 @@ Our model is easy to use with the [transformers](https://github.com/huggingface/
 
 
 ```python
+import torch
 from transformers import AutoModel, AutoTokenizer
 from torch.nn import CosineSimilarity
 
@@ -83,9 +84,9 @@ def get_average_embedding(texts):
         embeddings = model(input_ids=inputs["input_ids"], attention_mask=inputs["attention_mask"])
         attention_mask = inputs["attention_mask"].unsqueeze(-1)
         embeddings = torch.sum(embeddings[0]*attention_mask, dim=1) / torch.sum(attention_mask, dim=1)
-		return embeddings
-  
-cosine_sim = nn.CosineSimilarity(dim=1)
+        return embeddings
+
+cosine_sim = CosineSimilarity(dim=0)
 embeddings = get_average_embedding(texts)
 
 print("Similarity of the two sentences is: ", cosine_sim(embeddings[0], embeddings[1]).item())
