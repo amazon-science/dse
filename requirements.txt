@@ -1,4 +1,4 @@
-transformers==4.8.1
+transformers==4.30.0
 sentence-transformers==2.0.0
 numpy
 sklearn
